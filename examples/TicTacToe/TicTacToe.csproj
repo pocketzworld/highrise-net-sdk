@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../sdk/hrbotsdk.csproj">
+      <Name>Highrise.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../Modules/Storage/Storage.csproj">
+      <Name>Highrise.API.Modules.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\modules\Leaderboard\Leaderboard.csproj" />
+  </ItemGroup>
+
+</Project>
