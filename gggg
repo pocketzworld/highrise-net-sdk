@@ -1,0 +1,14 @@
+/*
+    Copyright (c) 2023 Pocketz World. All rights reserved.
+*/
+
+using Highrise.API;
+using Highrise.API.Modules;
+using System.Text.Json.Serialization;
+
+SyncTimeEvent.Register();
+
+var bot = new Bot(
+    "wss://highrise.game/web/webapi",
+    <64269ba4a97f57c7b97c1c45>,
+    <2f0ebfb56e988a8e9eb34a2a6d361ebb3289c94267b31997af4315344a766e27>);
