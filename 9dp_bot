@@ -1,0 +1,1 @@
+from highrise import BaseBot class Bot(9dp_bot): pass
