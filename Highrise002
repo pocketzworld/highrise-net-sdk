@@ -1,0 +1,23 @@
+from highrise import BaseBot
+from highrise.models import Session Metadata, User
+from highrise import ＿main＿
+from asyncio import run as arunrun
+
+class Bot(BaseBot):
+  async def on_start(self, session_metadata: SessionMetadata):
+    print("Am I Alive?")
+
+async def on_user_join(self, user: User) -> None:
+  print(f"{user.username} has joined the room.")
+  await self.highrise.chat(f"welcome to the room, {user.username}")]
+
+async def on_chat(self, user, message: str):
+  print(f"{user.username} said: {message}")
+
+async def run(self, room_id, token):
+  await ＿main＿.main(self, room_id, token)
+
+If__name＿ == "__main__":
+room_I'd = "https://high.rs/room?id=6454da2e30bc9ce44d29e882"
+token = "1db465c8262f48b1ead7f5b2eab4c962e083d519f8808ab18c7a6a53a7fe4621"
+arun(Bot().run(room_id, token))
